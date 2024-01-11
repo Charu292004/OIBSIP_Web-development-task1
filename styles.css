@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #d489e9, #f3f3f3);
+    color: #070101;
+}
+
+header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #0f0202;
+    color: #f8f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.featured-song {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.song-card {
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fefefe;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.song-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.song-card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.song-card:hover img {
+    transform: scale(1.2);
+}
+
+.song-card h3,
+.song-card p {
+    margin: 0;
+    color: #060000;
+}
+
+.artist-button {
+    background-color: #bb76d2;
+    color: #070000;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.artist-button:hover {
+    background-color: #a839be;
+}
+
+.cta-button {
+    background-color: #050005;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #453c3c;
+}
+
+footer {
+    background-color: #1d1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
